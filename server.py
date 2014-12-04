@@ -1,9 +1,12 @@
+#-*-coding:utf-8-*- 
 import socket
 import sys
 import struct
+reload(sys) 
+sys.setdefaultencoding('utf-8')
 
-address = ('localhost', 6005)
-server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+address = ('localhost', 50000)
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind(address)
 
 while True:
