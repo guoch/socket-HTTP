@@ -1,30 +1,38 @@
-'''
-import socket
-HOST=''
-PORT=50000
-s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.bind((HOST,PORT))
-s.listen(1)
-conn,addr=s.accept()
-print 'Connected by',addr
-while 1:
-	data=conn.recv(1024)
-	if not data:break
-	conn.sendall(data)
-conn.close()
-'''
 #-*-coding:utf-8-*- 
 import SocketServer
 import sqlite3
-class MyTCPHandle(SocketServer.BaseRequestHandler):
-	def add(self,stuid,name,pic):
+import sys
+reload(sys) 
+sys.setdefaultencoding('utf-8')
+conn=sqlite3.connect("namelist.db")
 
+class MyTCPHandle(SocketServer.BaseRequestHandler):
+	#以下为该类HTTP协议支持的方法
+	def add(self,stuid,name,picture=None):
+		curadd=conn.cursor()
+		curadd.execute("insert into stu values(?,?,?)",(stuid,name,picture,))
+		conn.commit()
 		return "Add Successfully"
+
 	def delete(self,stuid):
+		curdel=conn.cursor()
+		curdel.execute("delete * from stu where stuid=?",(stuid,))
+		conn.commit()
 		return "Delete Successfully"
-	def modify(self,stuid,name=None,pic=None):
+
+	def modify(self,stuid,name=None,picture=None):
+		curmod=conn.cursor()
+		curmod.execute("update stu set name=?,picture=? where stuid=?",(name,picture,stuid,))
+		conn.commit()
 		return "Modify Successfully"
+
 	def display(self):
+		curls=conn.cursor()
+		curls.execute("select stuid,name,picture from stu")
+		result=curls.fetchall()
+		return result
+
+
 		pass
 	def error(self):
 		pass
