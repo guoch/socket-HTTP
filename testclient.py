@@ -1,17 +1,8 @@
-'''
-import socket
-HOST='localhost'
-PORT=50000
-s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect((HOST,PORT))
-s.sendall('Hello,world')
-data=s.recv(1024)
-s.close()
-print 'Received',repr(data)
-'''
 #-*-coding:utf-8-*- 
 import socket
 import sys
+reload(sys) 
+sys.setdefaultencoding('utf-8')
 
 HOST,PORT='localhost',50000
 data=" ".join(sys.argv[1:])
