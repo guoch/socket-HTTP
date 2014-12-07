@@ -48,6 +48,7 @@ class GchHttpHandle(SocketServer.BaseRequestHandler):
 		method=request.split(' ')[0]
 		backmessage=""
 		#src=request.split(' ')[1]
+		print request.split(' ')
 		if method=='add':
 			if len(request.split(' '))<4:
 				backmessage=add(request.split(' ')[1],request.split(' ')[2])
