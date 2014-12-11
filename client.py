@@ -19,5 +19,5 @@ while(True):
 	finally:
 		sock.close()
 	print "Sent: {}".format(data)
-	print "Received: {}".format(received)
+	print "Received:\n{}".format(received)
 	#if data=="quit":

@@ -32,8 +32,12 @@ def ls():
 	curls=conn.cursor()
 	curls.execute("select stuid,name,picture from stu")
 	result=curls.fetchall()
-	dis=str(result)
+	dis=""
+	for line in result:
+		dis=dis+str(line[0])+"\t"+str(line[1])+"\t"+str(line[2])+"\n"
 	return dis
+	#dis=str(result)
+	#return dis
 
 def error():
 	return "The server cannot process your request,Maybe some error"

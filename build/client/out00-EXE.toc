@@ -1,0 +1,9 @@
+('D:\\GitHub\\socket-HTTP-master\\dist\\client.exe',
+ True,
+ False,
+ None,
+ None,
+ [],
+ None,
+ False,
+ 1418285688L)
