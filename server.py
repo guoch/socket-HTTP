@@ -73,6 +73,8 @@ class GchHttpHandle(SocketServer.BaseRequestHandler):
 
 #在主函数中实例化类，制定server端的服务器和端口号，本程序中默认端口号为50000
 if __name__=="__main__":
-	HOST,PORT="localhost",50000
+	#HOST,PORT="10.131.255.52",50000
+	HOST=raw_input("Input server eth IP or hostname: ")
+	PORT=50000
 	server=SocketServer.TCPServer((HOST,PORT),GchHttpHandle)
 	server.serve_forever()
