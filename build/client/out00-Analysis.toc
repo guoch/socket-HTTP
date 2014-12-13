@@ -4,7 +4,7 @@
   'C:\\Python27\\lib\\site-packages\\pyinstaller-2.1-py2.7.egg\\PyInstaller\\loader\\pyi_carchive.py',
   'C:\\Python27\\lib\\site-packages\\pyinstaller-2.1-py2.7.egg\\PyInstaller\\loader\\pyi_os_path.py',
   'client.py'],
- ['D:\\GitHub\\socket-HTTP-master'],
+ ['D:\\GitHub\\socket-HTTP'],
  None,
  None,
  [('_pyi_bootstrap', 'C:\\Python27\\lib\\site-packages\\pyinstaller-2.1-py2.7.egg\\PyInstaller\\loader\\_pyi_bootstrap.py', 'PYSOURCE'), ('pyi_importers', 'C:\\Python27\\lib\\site-packages\\pyinstaller-2.1-py2.7.egg\\PyInstaller\\loader\\pyi_importers.py', 'PYSOURCE'), ('pyi_archive', 'C:\\Python27\\lib\\site-packages\\pyinstaller-2.1-py2.7.egg\\PyInstaller\\loader\\pyi_archive.py', 'PYSOURCE'), ('pyi_carchive', 'C:\\Python27\\lib\\site-packages\\pyinstaller-2.1-py2.7.egg\\PyInstaller\\loader\\pyi_carchive.py', 'PYSOURCE'), ('pyi_os_path', 'C:\\Python27\\lib\\site-packages\\pyinstaller-2.1-py2.7.egg\\PyInstaller\\loader\\pyi_os_path.py', 'PYSOURCE'), ('client', 'client.py', 'PYSOURCE')],

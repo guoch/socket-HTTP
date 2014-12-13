@@ -1,9 +1,0 @@
-('D:\\GitHub\\socket-HTTP-master\\dist\\clientGUI.exe',
- False,
- False,
- None,
- None,
- [],
- None,
- False,
- 1418285884L)

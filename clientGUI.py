@@ -11,8 +11,8 @@ HOST=eg.enterbox("What is your server IP")
 while(True):
 	#data=" ".join(sys.argv[1:])
 	#data=raw_input("Please input your instruction:")
-	msg         = "Enter your HTTP instruction"
-	title       = "Network communication"
+	msg         = "Enter your HTTP instruction.The server support 'ls' 'add' 'delete' 'modify' "
+	title       = "GchHTTP Network communication"
 	fieldNames  = ["Instruction","StudentID","StudentName","StudentPicture"]
 	fieldValues = []  # we start with blanks for the values
 	fieldValues = eg.multenterbox(msg,title, fieldNames)

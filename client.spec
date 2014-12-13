@@ -1,6 +1,6 @@
 # -*- mode: python -*-
 a = Analysis(['client.py'],
-             pathex=['D:\\GitHub\\socket-HTTP-master'],
+             pathex=['D:\\GitHub\\socket-HTTP'],
              hiddenimports=[],
              hookspath=None,
              runtime_hooks=None)
