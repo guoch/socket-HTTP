@@ -9,6 +9,7 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # Windows Installer files
+# Compile command pyinstaller -F -w clientGUI.py
 *.cab
 *.msi
 *.msm
@@ -26,7 +27,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*

@@ -1,9 +1,0 @@
-('D:\\GitHub\\socket-HTTP\\dist\\server.exe',
- True,
- False,
- None,
- None,
- [],
- None,
- False,
- 1418399230L)
